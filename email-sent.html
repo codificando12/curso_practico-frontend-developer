@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Create password</title>
+    <title>Email Sent</title>
     <style>
         :root {
             --very-light-pink: #C7C7C7C7;
@@ -33,6 +33,7 @@
             display: grid;
             grid-row: auto 1fr auto;
             width: 300px;
+            justify-items: center;
            
         }
 
@@ -51,35 +52,20 @@
 
         .subtitle {
             font-size: var(--md);
+            font-weight: 500;
             color: var(--very-light-pink);
             font-weight: 300;
             text-align: center;
             margin-top: 0;
-            margin-bottom: 32px;
+            margin-bottom: 0;
+
         }
 
-        .form {
+        .envelope-container {
             display: flex;
-            flex-direction: column;
+            height: 168px;
         }
-
-        .label {
-            font-size: var(--md);
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .input {
-            border: none;
-            background-color: var(--text-input-field);
-            border-radius: 10px;
-            height: 32px;
-            align-self: center;
-            margin-bottom: 32px;
-            font-size: var(--md);
-            margin-bottom: 32px;
-            width: 100%;
-        }
+        
 
         .primary-button {
             width: 100%;
@@ -90,6 +76,21 @@
             color: var(--white);
             font-weight: 700;
             cursor: pointer;
+        }
+
+        .forget {
+            margin-top: 24px;
+            font-size: var(--sm);
+        }
+
+        .forget span{
+            font-weight: 500;
+        }
+
+        .forget a {
+            text-decoration: none;
+            color: var(--hostpital-green);
+            font-weight: 700;
         }
         @media (max-width: 640px) {
             .logo {
@@ -102,16 +103,13 @@
     <div class="container">
         <div class="form-container">
         <img src="./assets/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo">
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for the accoung</p>
-      
-        <form action="./email-sent.html" class="form">
-            <label for="password" class="label" >Password</label>
-            <input type="password" placeholder="********" id="password" class="input input-password">
-            <label for="re-enter-password" class="label" >Re enter password</label>
-            <input type="password" name="" id="new-password" class="input input-password">
-            <input type="submit" value="Confirm" class="primary-button login-button">
-        </form>
+        <h1 class="title">Email has been sent!</h1>
+        <p class="subtitle">Please check your inbox for instrutions on how to reset the password</p>
+        <div class="envelope-container">
+        <img src="./assets/Platzi_YardSale_Icons/email.svg" class="envelope" alt="email-image">
+        </div>
+        <a href="./login.html" class="primary-button"><button class="primary-button login-button" >Login</button></a>
+        <p class="forget"><span>Didn't receive the email?</span> <a href="#">Resend</a></p>
     </div>
     
     </div>
