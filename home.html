@@ -14,10 +14,80 @@
             --hostpital-green: #ACD9B2;
             --white: #FFFFFF;
             --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
         }
 
         body {
             font-family: "Quicksand", sans-serif;
+        }
+
+        .main-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cards-container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 16px;
+            place-content: center;
+        }
+
+        .product-card {
+            width: 240px;
+            
+        }
+
+        .product {
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .icon {
+            margin: 16px;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info div p:nth-child(1) {
+            font-weight: 700;
+            font-size: var(--md);
+            margin-top: 0; 
+            margin-bottom: 4px;      
+        }
+
+        .product-info div p:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        @media (max-width:640px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, 180px);
+            }
+
+            .product-card {
+                width: 180px;
+            }
+
+            .product {
+            width: 100%;
+            height: 180px;
+            }
+
         }
     </style>
 </head>
@@ -26,179 +96,143 @@
         <div class="cards-container">
             <div class="product-card">
                 <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-
+                <div class="product-info">
                 <div>
                     <p>$120,00</p>
-                    <p>Bike</p>
+                    <p class="product-description">Bike</p>
                 </div>
                 <figure class="icon">
                     <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
                 </figure>
             </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-            <div class="product-card">
-                <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
-                <div>
-                    <p>$120,00</p>
-                    <p>Bike</p>
-                </div>
-                <figure class="icon">
-                    <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
-                </figure>
-            </div>
-
         </div>
+        <div class="product-card">
+            <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+            <div class="product-info">
+            <div>
+                <p>$120,00</p>
+                <p >Bike</p>
+            </div>
+            <figure class="icon">
+                <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+            </figure>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+        <div class="product-info">
+        <div>
+            <p>$120,00</p>
+            <p class="product-description">Bike</p>
+        </div>
+        <figure class="icon">
+            <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+        </figure>
+    </div>
+</div>
+<div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div><div class="product-card">
+    <img src="./assets/products-imgs/bicycle-1834265_640.jpg" alt="" class="product">
+    <div class="product-info">
+    <div>
+        <p>$120,00</p>
+        <p class="product-description">Bike</p>
+    </div>
+    <figure class="icon">
+        <img src="./assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="icon">
+    </figure>
+</div>
+</div>
+            
        
-        
+        </div>
     </section>
 </body>
 </html>
