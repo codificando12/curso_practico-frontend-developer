@@ -31,24 +31,47 @@
             padding: 0 24px;
         }
 
+        .navbar-left {
+            display: flex;
+            margin-left: 24px;
+        }
+
         .icon-menu {
             display: none;
         }
 
-        li {
-            list-style: none;
-            margin: 0;
+        .logo {
+            width: 150px;
+            margin-right: 24px;
         }
 
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+        }
 
+        .navbar-left ul li {
+            margin: 8px;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            font-weight: 500;
+        }
+
+       
+
+      
     </style>
 </head>
 <body>
     <nav>
         <img src="assets/Platzi_YardSale_Icons/icon_menu.svg" alt="icon-menu" class="icon-menu">
-        <div clas="navbar-left">
-            <img src="assets/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="">
-            <ul>
+        <div class="navbar-left">
+            <img src="assets/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <ul class="navbar-left_ul">
                 <li>
                     <a>All</a>
                 </li>
@@ -69,7 +92,8 @@
                 </li>
             </ul>
         </div>
-        <div clas="navbar-right">
+        <div class="navbar-right">
+            <ul>
             <li>camilajakoo@gmail.com
                 <img src="assets/Platzi_YardSale_Icons/flechita.svg">
             </li>
@@ -77,6 +101,7 @@
             <img src="assets/Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="">
                 <div>2</div>
             </li>
+        </ul>
         </div>
     </nav>
 </body>
