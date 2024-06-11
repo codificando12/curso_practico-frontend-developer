@@ -25,8 +25,7 @@
 
         nav {
             display: flex;
-            background-color: var(--text-input-field);
-            border-bottom: 1px solid var(--black);
+            width: 100vw;
             justify-content: space-between;
             padding: 0 24px;
         }
@@ -42,7 +41,7 @@
 
         .logo {
             width: 150px;
-            margin-right: 24px;
+            margin-right: 28px;
         }
 
         .navbar-left ul,
@@ -55,13 +54,71 @@
         }
 
         .navbar-left ul li {
-            margin: 8px;
+            margin: 12px;
             color: var(--very-light-pink);
             font-size: var(--md);
             font-weight: 500;
         }
 
+        .navbar-left ul li:nth-child(1){
+            width: 40px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--hostpital-green);
+            border: 1px solid var(--hostpital-green);
+            border-radius: 10px;
+        }
+
+        .navbar-right ul li {
+            margin: 12px;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            font-weight: 500;
+        }
+
+        .arrow-menu {
+            margin-left: 8px;
+            transform: rotate(90deg);
+        }
+
+        .navbar-shopping-cart {
+            display: flex;
+        }
+
+        .navbar-shopping-cart div {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            bottom: 10px;
+            right: 10px;
+            color: var(--black);
+            font-size: var(--sm);
+            font-weight: 700;
+            text-align: center;
+            background-color: var(--hostpital-green);
+            border-radius: 50px;
+        }
        
+        @media (max-width: 1080px){
+
+            .icon-menu {
+                display: block;
+            }
+
+            .navbar-left ul {
+                display: none;
+            }
+
+            .arrow-menu {
+            display: none;
+            }
+
+            .email {
+                display: none;
+            }
+        }
 
       
     </style>
@@ -71,7 +128,7 @@
         <img src="assets/Platzi_YardSale_Icons/icon_menu.svg" alt="icon-menu" class="icon-menu">
         <div class="navbar-left">
             <img src="assets/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo">
-            <ul class="navbar-left_ul">
+            <ul >
                 <li>
                     <a>All</a>
                 </li>
@@ -94,8 +151,8 @@
         </div>
         <div class="navbar-right">
             <ul>
-            <li>camilajakoo@gmail.com
-                <img src="assets/Platzi_YardSale_Icons/flechita.svg">
+            <li class="email">camilajakoo@gmail.com
+                <img src="assets/Platzi_YardSale_Icons/flechita.svg" class="arrow-menu">
             </li>
             <li class="navbar-shopping-cart">
             <img src="assets/Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="">
