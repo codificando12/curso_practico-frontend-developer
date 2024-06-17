@@ -24,7 +24,6 @@
         }
 
         .product-container {
-            border: 1px solid red;
             width: 360px;
             padding-bottom: 24px;
             position: absolute;
@@ -54,10 +53,55 @@
             border-radius: 0 0 20px 20px;
         }
 
+
+        .img-selectors{
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .imgs {
+            width: 12px;
+            height: 12px;
+            background-color: var(--text-input-field);
+            margin: 4px;
+            border-radius: 50%;
+        }
+
+        .info-container {
+            margin: 24px;
+        }
+
+        .info-container p:nth-child(1) {
+            font-size: var(--lg);
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .info-container p:nth-child(2) {
+            font-size: var(--lg);
+            font-weight: 500;
+            color: var(--very-light-pink);
+            margin-top: 4px;
+        }
+
+        .info-container p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: 500;
+            color: var(--very-light-pink);
+            margin-top: 4px;
+        }
+
         .primary-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 48px;
+            margin-top: 48px;
             background-color: var(--hostpital-green);
+            border: none;
+            text-align: center;
             border-radius: 10px;
             font-size: var(--md);
             color: var(--white);
@@ -65,9 +109,15 @@
             cursor: pointer;
         }
 
-        @media (max-width: 1080px){
+       
 
-    
+        @media (max-width: 640px){
+
+            .product-container {
+            
+            width: 100%;
+            padding-bottom: 24px;  
+        }
         }
 
       
@@ -79,16 +129,18 @@
             <img src="assets/Platzi_YardSale_Icons/icon_close.png" alt="close-icon">
         </div>
             <img src="assets/products-imgs/bicycle-1834265_640.jpg" alt="bike">
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
+            <div class="img-selectors">
+                <div class="imgs"></div>
+                <div class="imgs"></div>
+                <div class="imgs"></div>     
+        </div>
         <div class="info-container">
             <p>$120,00</p>
             <p>Mountain bike</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio fugiat laboriosam officiis ab veritatis aspernatur, inventore beatae exercitationem, repudiandae delectus ipsa aliquid ipsum doloribus quaerat totam consectetur qui sint odit. </p>
                 <button class="primary-button">
                     <img src="assets/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
-                    Add to cart
+                    <span>Add to cart</span>
                 </button>
            
         </div>
